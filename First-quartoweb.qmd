@@ -5,7 +5,6 @@ execute:
   echo: false
   message: false
   warning: false
-  output: false
 ---
 
 ```{r}
@@ -34,4 +33,23 @@ mtcars|>
   )
 ```
 
+## About Me
+I'm **Vaangmaya**, a rising senior at MVHS.
 
+## About the Project
+###### Performance of Cars and their Weights
+My project explores how the weight of the car impacts their overall performance
+
+### Goals
+
+- 
+- 
+
+1. 
+2. 
+
+"This is Data Science"
+\
+~Preceptor
+
+["Kane's Free Data Science Bootcamp"](https://bootcamp.davidkane.info)
