@@ -1,5 +1,22 @@
-project:
+website:
   title: "First-quartoweb"
+  navbar:
+    left:
+      - href: First-quartoweb.qmd
+        text: Home
+      - First-quartoweb.qmd
+        text: About
+      - sidebar:sources
+      - sidebar:interactive
+        
+  sidebar:
+    - id: sources
+      title: "Source"
+      style: "Floating"
+      background: "#ffffff"
+      collapse-level: 2
+      contents:
+        - source-1.qmd
+        - source-2.qmd
 
-editor: visual
 
