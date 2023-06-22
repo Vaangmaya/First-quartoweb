@@ -1,11 +1,37 @@
 ---
-title: "First-quartoweb"
+title: "First-Quarto-Web"
+author: Vaangmaya Rebba
+execute: 
+  echo: false
+  message: false
+  warning: false
+  output: false
 ---
 
-## Quarto
+```{r}
+#| label: induction
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+library(tidyverse)
+library(ggthemes)
+```
 
 ```{r}
-1 + 1
+#| label: car-plot
+
+mtcars|>
+  select(mpg, wt)|>
+  ggplot(
+    aes(x = wt, y = mpg)
+  )+
+  geom_point()+
+  geom_smooth(method = "lm", formula = y~x, se = FALSE)+
+  theme_clean()+
+  labs(
+    title = "The Weight of Cars and the Amounr of Miles per Gallon Used",
+    subtitle = "Lighter cars have higher mpg",
+    x = "Weight(1000 pounds)", y = "Mpg",
+    caption = "Henderson and Vellerman (1981)"
+  )
 ```
+
+
